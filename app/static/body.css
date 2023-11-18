@@ -1,0 +1,53 @@
+/* Add this to your existing CSS or replace the existing :root section */
+:root {
+  /* fonts */
+  --font-roboto: 'Roboto', sans-serif; /* Use single quotes for font names with spaces */
+  --font-inherit: inherit;
+
+  /* font sizes */
+  --font-size-base: 16px;
+  --font-size-sm: 14px;
+  --font-size-lg: 24px; /* Set the global font size to 24px */
+  --font-size-3xs: 10px;
+  --font-size-lgi: 19px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-lightgray: #d3d3d6;
+  --color-gray-200: #272a30;
+  --color-goldenrod: #faaa42;
+  --color-brown: #981c24;
+  --color-darkslategray: #303139;
+  --color-dimgray: #656565;
+
+  /* Paddings */
+  --padding-3xs: 10px;
+
+  /* Border radiuses */
+  --br-lg: 18px;
+  --br-17xl-5: 36.5px;
+  --br-7xl: 26px;
+  --br-2xs: 11px;
+  --br-2xs-8: 10.8px;
+  --br-xs: 12px;
+  --br-6xs: 7px;
+}
+
+/* Update font family and size for body */
+body {
+  font-family: var(--font-roboto);
+  font-size: var(--font-size-lg);
+  margin: 0;
+  line-height: normal;
+}
+
+
+.sign-in-user-Cnw {
+  background-color:  #ffffff;
+  height: 102.4rem;
+  overflow : hidden;
+  position:  relative;
+  width :  100%;
+  }
+  
