@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="left-half">
+            <img src="{{ url_for('static', filename='logo2.png') }}" alt="logo2">
+            <div class="welcome-text-2">Sign up Here!</div>
+
+            <div class="field-wrapper">
+                <div class="field">
+                    <input type="text" placeholder="First Name">
+                </div>
+                <div class="field-label"></div>
+            </div>
+
+            <!-- Input box for Last Name -->
+            <div class="field-wrapper2">
+                <div class="field">
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <div class="field-label2"></div>
+            </div>
+
+            <button class="create-account-button" onclick="window.location.href='your_create_account_url';">
+                <div class="create-account-button-content">Create Account</div>
+            </button>
+
+            <div class="divider-container">
+                <div class="divider-line"></div>
+                <div class="divider-text">OR</div>
+                <div class="divider-line"></div>
+            </div>
+
+            <div class="google-button-container-2" onclick="window.location.href='your_redirect_url';">
+                <img src="{{ url_for('static', filename='logogoogle.png') }}" alt="Google Logo">
+                <div class="google-connect-text-2">Connect with My.IIT</div>
+            </div>
+
+            <button class="admin-login-button" onclick="window.location.href='admin_login_url';">
+                Log in as Admin
+            </button>
+        </div>
+        <div class="right-half-2">
+            <img src="{{ url_for('static', filename='signuo.jpg') }}" alt="random display">
+            <div class="form-container">
+                <!-- Your form elements go here -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,265 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* 100% of the viewport height */
+}
+
+.left-half {
+    flex: 1;
+    background-color: #710f0f;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.right-half {
+    flex: 1;
+    background-color: #551C1C;
+    box-shadow: 10px 0 15px rgba(230, 230, 230, 0.5);
+}
+
+.right-half img {
+    width: 794px;
+    height: 890px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-half img {
+    display: block;
+    margin-top: 10px;
+}
+
+
+.logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+.welcome-text {
+    color: white;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    word-wrap: break-word;
+    margin-top: 20%;
+
+}
+
+.google-button-container {
+    width: 60%;
+    padding: 5px;
+    background: white;
+    border-radius: 32px;
+    overflow: hidden;
+    border: 1px #333333 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 20%;
+    cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+}
+
+.google-button-container img {
+    width: 35px;
+    height: 35px;
+    margin-right:60px;
+    margin-bottom: 5px;
+    
+}
+
+.google-connect-text {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-family: 'Poppins';
+    margin-top: 5px;
+}
+
+
+
+.admin-login-button {
+    width: 10%;
+    padding: 10px;
+    background: white;
+    border-radius: 32px;
+    overflow: hidden;
+    border: 1px #333333 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px; /* Adjust bottom value as needed */
+    left: 10px; /* Adjust left value as needed */
+    cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+}
+
+.admin-login-text {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 'Poppins';
+    margin-top: 5px;
+}
+
+.admin-login-button:hover {
+    background-color: #1943b8; /* Change to desired hover background color */
+}
+
+.google-button-container:hover {
+    background-color: #ef9292; /* Change to desired hover background color */
+}
+
+
+/*sign up here*/
+
+.right-half-2 img {
+    width: 50vw; /* 50% of the viewport width */
+    height: 100%; /* Full height of the container */
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+}  
+
+.field-wrapper, .field-wrapper2 {
+    width: 60%;
+    padding: 5px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px #333333 solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    margin-top: 15px; /* Adjust as needed */
+    margin-left: 20%;
+}
+
+.field-wrapper .field, .field-wrapper2 .field {
+    width: 100%;
+}
+
+.field-wrapper input, .field-wrapper2 input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.field-wrapper .field-label, .field-wrapper2 .field-label {
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 14px;
+    font-family: Lexend Deca;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word;
+    margin-top: 5px;
+}
+
+.welcome-text-2 {
+    color: white;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400px;
+    word-wrap: break-word;
+    margin-top: 20%;
+
+}
+
+.google-button-container-2 {
+    width: 60%;
+    padding: 5px;
+    background: white;
+    border-radius: 32px;
+    overflow: hidden;
+    border: 1px #333333 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 20%;
+    cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+}
+
+.google-button-container-2 img {
+    width: 35px;
+    height: 35px;
+    margin-right:60px;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    
+}
+
+.google-connect-text-2 {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-family: 'Poppins';
+    margin-top: 5px;
+}
+
+.google-button-container-2:hover {
+    background: #de6a6a; /* Change the background color on hover */
+}
+
+.divider-container {
+    position: absolute;
+    margin-top: 30px;
+    margin-left:25%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 23px;
+}
+
+.divider-line {
+    flex: 1 1 0;
+    height: 2px;
+    background: rgba(102, 102, 102, 0.25);
+}
+
+.divider-text {
+    color: rgba(102, 102, 102, 0.75);
+    font-size: 14px;
+    font-family: Lexend Deca;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.create-account-button {
+    width: 20%;
+    padding: 10px;
+    background: #FFBA07;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.30);
+    overflow: hidden;
+    border: 1px #333333 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 40%;
+    margin-bottom: 10px;
+    cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+}
+
+
+.create-account-button-content {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+}
+
+
+.create-account-button:hover {
+    background: #FFD733; /* Change the background color on hover */
+}
