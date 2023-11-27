@@ -1,0 +1,133 @@
+.user-window {
+    width: 450px;
+    height: auto;
+    padding: 20px;
+    top: 0;
+    margin-left: 80px;
+    margin-top: 20px;
+    position: fixed;
+    z-index: 100;
+    display: none;
+}
+
+.user-container {
+    width: 337px;
+    height: 200px;
+    background-color: var(--white);
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    box-shadow: 0 4px 16px rgba(0, 32, 51, 0.12);
+    position: relative;
+
+    background-image: url('/static/assets/iligan-waterfalls.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#g-signin-button {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+#user-picture {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.details-container {
+    width: 337px;
+    height: 160px;
+    background-color: var(--white);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 32, 51, 0.12);
+    padding: 10px;
+    text-align: center;
+    z-index: 0;
+
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.user-container h1 {
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #1D7A7F;
+}
+
+#given-name {
+    color: #1D7A7F;
+}
+
+.user-container p {
+    font-weight: 200;
+    font-size: 12px;
+    padding: 1px;
+}
+
+.saved-routes-container {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    bottom: 47px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0px;
+}
+
+.saved-routes-container p {
+    font-weight: 200;
+    font-size: 14px;
+    padding: 1px;
+}
+
+.saved-routes-btn {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    border: 0.5px groove #1D7A7F;
+    border-radius: 10px;
+    outline: #1D7A7F;
+    cursor: pointer;
+    align-items: bottom;
+    gap: 4px;
+}
+
+
+.signout-container {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 18px;
+}
+
+.signout-button {
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: bottom;
+    gap: 2px;
+
+}

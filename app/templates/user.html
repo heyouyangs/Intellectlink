@@ -1,0 +1,34 @@
+
+<div class="user-window" id="user-window">
+    <div class="user-container" id="user-container">
+        
+        <script src="https://accounts.google.com/gsi/client" async defer></script>
+        {% if user.is_authenticated %}
+            <!-- Display user details -->
+            <div class="details-container" id="details-container">
+                <!-- Display user information -->
+                <h1>Maayong Adlaw, <span id="given-name">{{ user.details.given_name }}!</span></h1>
+                <p><span id="user-email">{{ user.details.email }}</span></p>
+
+                <div class="saved-routes-container">
+                    <div class="saved-routes-btn">
+                        <img src="{{ url_for('static', filename='assets/bookmarked.png') }}" alt="bookmark icon">
+                        <p> Your saved routes </p>
+                    </div>
+                </div>
+
+                <div class="signout-container">
+                    <div class="signout-button" onclick="onSignout()">
+                        <img src="{{ url_for('static', filename='assets/logout.png') }}" alt="signout icon">
+                        <p>Sign out</p>
+                    </div>
+                </div>
+                <img id="user-picture" src="{{user.details.picture}}" alt="User Picture">
+            </div>
+            
+      
+            </div>    
+        </div>
+    </div>
+</div>
+

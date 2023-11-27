@@ -3,7 +3,7 @@ from flask_mysql_connector import MySQL
 from flask_bootstrap import Bootstrap
 from config import DB_USERNAME, DB_PASSWORD, DB_NAME, DB_HOST, SECRET_KEY, BOOTSTRAP_SERVE_LOCAL
 from flask_wtf.csrf import *
-from app.routes import signuproute
+from app.routes import signinroute
 
 mysql = MySQL()
 bootstrap = Bootstrap()
@@ -24,8 +24,8 @@ def create_app(test_config=None):
 
     @app.route('/')
     def homepage():
-        return render_template('signup.html')
+        return render_template('signin.html')
     
-    app.register_blueprint(signuproute.signup_bp)
+    app.register_blueprint(signinroute.signin_bp)
     
     return app
